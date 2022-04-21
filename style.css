@@ -42,3 +42,48 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.headline {
+  display: flex;
+  background-color: #1C1A19;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.social {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+}
+
+.social ul li {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.salute {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  color: white;
+}
+
+h1 {
+  color: #F55800;
+  line-height: 80px;
+  font-size: 75px;
+}
+
+.title {
+  font-size: 30px;
+  font-family: sans-serif;
+  line-height: 70px;
+}
+
+.description {
+  font-size: 20px;
+  font-family: sans-serif;
+}
