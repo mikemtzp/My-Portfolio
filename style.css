@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  background-color: #3E3C3C;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navlinks {
+  display: flex;
+  list-style: none; 
+  height: 35px;
+  align-items: center;
+}
+
+.navlinks li {
+  display: inline-block;
+  padding: 5px 8px;
+  font-weight: bold;
+  font-size: 12px;
+  justify-content: center;
+}
+
+.navlinks img {
+  height: 18px;
+}
+
+.menu .myname {
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
