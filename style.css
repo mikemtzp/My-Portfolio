@@ -85,7 +85,7 @@ h1 {
 .works {
   display: grid;
   align-content: center;
-  height: fit-content;
+  height: 2000px;
 }
 
 .w1 {
@@ -147,7 +147,7 @@ h1 {
 
 .w1-see {
   width: fit-content;
-  padding: 8px 5px;
+  padding: 8px 8px;
   background-color: #ff6b00;
   color: white;
   font-family: sans-serif;
@@ -215,3 +215,68 @@ h1 {
   text-align: center;
 }
 
+.about-me {
+  background-color: #1c1a19;
+}
+
+.about {
+  display: flex;
+  background: #1c1a19 url(img/about-img.png) 100% 100% no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 23px;
+  height: 550px;
+}
+
+.about-title {
+  color:#ff6b00;
+  font-size: 80px;
+  padding-bottom: 10px;
+}
+
+.about-text {
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 25px;
+  padding: 10px 0px;
+}
+
+.line-about {
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+  align-self: center;
+}
+
+.programming {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 23px;
+  height: 800px;
+  justify-content: center;
+}
+
+.lan-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+}
+
+.lan-title {
+  display: flex;
+  color: white;
+  font-size: 35px;
+  list-style: none;
+  padding: 0px 20px;
+}
+
+.lan-text {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  list-style: none;
+  font-weight: 100;
+  padding: 10px 0px;
+}
