@@ -74,6 +74,22 @@ h1 {
   justify-content: center;
 }
 
+.w1-lan li {
+  padding: 5px;
+  font-family: sans-serif;
+  border: 1px solid #8993a4;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.project-lan li {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: sans-serif;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
+
 .social ul li {
   padding: 15px 10px;
   list-style: none;
@@ -91,7 +107,7 @@ h1 {
 .w1 {
   display: flex;
   flex-direction: column;
-  padding: 0px 23px
+  padding: 0 23px;
 }
 
 .works-title {
@@ -134,15 +150,6 @@ h1 {
   justify-content: start;
   align-content: center;
   grid-gap: 10px;
-  
-}
-
-.w1-lan li {
-  padding: 5px;
-  font-family: sans-serif;
-  border: 1px solid #8993a4;
-  border-radius: 2px;
-  margin-bottom: 10px;
 }
 
 .w1-see {
@@ -159,7 +166,7 @@ h1 {
 .w2 {
   display: flex;
   flex-direction: column;
-  padding: 0px 23px;
+  padding: 0 23px;
 }
 
 .w2-project {
@@ -176,7 +183,7 @@ h1 {
   color: white;
   font-size: 45px;
   line-height: 40px;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .project-text {
@@ -194,15 +201,7 @@ h1 {
   align-content: center;
   grid-gap: 10px;
   list-style: none;
-  padding: 0px 20px;
-}
-
-.project-lan li {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-  font-family: sans-serif;
-  padding: 10px 10px;
-  margin-bottom: 20px;
+  padding: 0 20px;
 }
 
 .project-see {
@@ -224,12 +223,12 @@ h1 {
   background: #1c1a19 url(img/about-img.png) 100% 100% no-repeat;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 23px;
+  padding: 0 23px;
   height: 550px;
 }
 
 .about-title {
-  color:#ff6b00;
+  color: #ff6b00;
   font-size: 80px;
   padding-bottom: 10px;
 }
@@ -239,11 +238,11 @@ h1 {
   font-size: 18px;
   font-weight: lighter;
   line-height: 25px;
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 
 .line-about {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #fff;
   width: 100%;
   align-self: center;
 }
@@ -251,7 +250,7 @@ h1 {
 .programming {
   display: flex;
   flex-direction: column;
-  padding: 0px 23px;
+  padding: 0 23px;
   height: 800px;
   justify-content: center;
 }
@@ -268,7 +267,7 @@ h1 {
   color: white;
   font-size: 35px;
   list-style: none;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .lan-text {
@@ -278,5 +277,5 @@ h1 {
   font-size: 18px;
   list-style: none;
   font-weight: 100;
-  padding: 10px 0px;
+  padding: 10px 0;
 }
