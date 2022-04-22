@@ -1,4 +1,4 @@
-# Set up a "Hello Microverse".
+# Building My Portfolio.
 > In this project, I will imitate a header from a Figma Template. My goal here is to practice the use of flexbox and my HTML and CSS abilities to build similar sections of a webpage. No complex coding is required for this exercise.
 
 ## Built With
