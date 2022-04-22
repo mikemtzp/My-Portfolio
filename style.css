@@ -4,6 +4,21 @@
   padding: 0;
 }
 
+.hour {
+  color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.mobile {
+  display: flex;
+  background-color: #3e3c3c;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+}
+
 .menu {
   display: flex;
   background-color: #3e3c3c;
@@ -14,11 +29,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navlinks {
-  display: flex;
-  list-style: none;
-  height: 35px;
-  align-items: center;
+.menu .myname {
+  font-weight: bolder;
+  font-size: 15px;
 }
 
 .navlinks li {
@@ -29,61 +42,57 @@
   justify-content: center;
 }
 
-.navlinks img {
-  height: 18px;
-}
-
-.menu .myname {
-  font-weight: bolder;
-  font-size: 15px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
 .headline {
   display: flex;
-  background-color: #1c1a19;
-  height: 100%;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.social {
-  display: flex;
-  align-items: center;
+  background: #1c1a19 url(img/illustration.png) 100% 100% no-repeat;
   justify-content: center;
-  width: 90px;
-}
-
-.social ul li {
-  margin-top: 10px;
-  list-style: none;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  padding: 15px 15px;
+  color: white;
 }
 
 .salute {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 600px;
-  color: white;
+  padding: 10px;
+  height: 600px;
 }
 
 h1 {
   color: #f55800;
-  line-height: 80px;
-  font-size: 75px;
+  line-height: 65px;
+  font-size: 55px;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 23px;
+  font-weight: bold;
   font-family: sans-serif;
-  line-height: 70px;
+  line-height: 40px;
 }
 
 .description {
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 20px;
   font-family: sans-serif;
+}
+
+.social {
+  display: flex;
+}
+
+.social ul {
+  display: flex;
+  justify-content: center;
+}
+
+.social ul li {
+  padding: 15px 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
