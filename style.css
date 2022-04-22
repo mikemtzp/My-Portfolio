@@ -165,7 +165,7 @@ h1 {
 
 .w1-see:hover {
   background-color: #fff5e1;
-  color: #f55800;;
+  color: #f55800;
   border: 1px solid #f55800;
 }
 
@@ -225,13 +225,19 @@ h1 {
 }
 
 .project-see:hover {
+  padding: 12px;
   background-color: #fff5e1;
-  color: #f55800;;
+  color: #f55800;
   border: 1px solid #f55800;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
 }
 
 .project-see:active {
   background-color: #e05304;
+  color: white;
 }
 
 .about-me {
