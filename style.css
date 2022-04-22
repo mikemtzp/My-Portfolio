@@ -85,7 +85,7 @@ h1 {
 .works {
   display: grid;
   align-content: center;
-  height: 950px;
+  height: fit-content;
 }
 
 .w1 {
@@ -110,7 +110,6 @@ h1 {
 
 .w1-img {
   padding-top: 70px;
-  align-self: center;
 }
 
 .w1-title {
@@ -119,13 +118,11 @@ h1 {
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 10px;
-  /* border: 1px solid #f55800; */
 }
 
 .w1-text {
   font-size: 15px;
   font-family: sans-serif;
-  /* border: 1px solid #f55800; */
   line-height: 20px;
   margin-bottom: 10px;
 }
@@ -158,3 +155,63 @@ h1 {
   font-size: 15px;
   margin-bottom: 10px;
 }
+
+.w2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 23px;
+}
+
+.w2-project {
+  background-image: url(img/workbackground.png);
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.project-title {
+  color: white;
+  font-size: 45px;
+  line-height: 40px;
+  padding: 0px 20px;
+}
+
+.project-text {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 25px;
+  padding: 10px 20px;
+}
+
+.project-lan {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
+  align-content: center;
+  grid-gap: 10px;
+  list-style: none;
+  padding: 0px 20px;
+}
+
+.project-lan li {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: sans-serif;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
+
+.project-see {
+  padding: 12px;
+  background-color: #ff6b00;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+}
+
