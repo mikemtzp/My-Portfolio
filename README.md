@@ -5,6 +5,16 @@
 - HTML & CSS
 - Linters: Lighthouse, Webhint & Stylelint
 
+## Setup
+Follow these steps on your console to properly clone this repository on your desktop:
+
+```
+$ cd desktop
+$ git clone https://github.com/mikemtzp/my-portfolio.git
+$ cd my-portfolio
+$ open index.html file
+```
+
 ## Authors
 👤 Mike Martínez
 

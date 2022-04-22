@@ -155,12 +155,22 @@ h1 {
 .w1-see {
   width: fit-content;
   padding: 8px 8px;
-  background-color: #ff6b00;
+  background-color: #f55800;
   color: white;
   font-family: sans-serif;
   font-weight: 500;
   font-size: 15px;
   margin-bottom: 10px;
+}
+
+.w1-see:hover {
+  background-color: #fff5e1;
+  color: #f55800;;
+  border: 1px solid #f55800;
+}
+
+.w1-see:active {
+  background-color: #e05304;
 }
 
 .w2 {
@@ -212,6 +222,16 @@ h1 {
   font-weight: 700;
   font-size: 17px;
   text-align: center;
+}
+
+.project-see:hover {
+  background-color: #fff5e1;
+  color: #f55800;;
+  border: 1px solid #f55800;
+}
+
+.project-see:active {
+  background-color: #e05304;
 }
 
 .about-me {
