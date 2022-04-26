@@ -161,6 +161,7 @@ h1 {
   font-weight: 500;
   font-size: 15px;
   margin-bottom: 10px;
+  border: none;
 }
 
 .w1-see:hover {
@@ -304,4 +305,66 @@ h1 {
   list-style: none;
   font-weight: 100;
   padding: 10px 0;
+}
+
+form {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.contact {
+  height: auto;
+}
+
+.text-contact {
+  text-align: center;
+  font-size: 2rem;
+  padding: 4rem 1rem 2rem 1rem;
+  color: #172b4d;
+  font-weight: 600;
+}
+
+.contact-me {
+  border: none;
+}
+
+.main,
+.text-area {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 0.1rem solid #dbd8d7;
+  padding: 0.5rem;
+  margin-bottom: 1.2rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.text-area {
+  background-color: #fbf8f7;
+}
+
+.submit {
+  display: block;
+  width: 131px;
+  height: 48px;
+  padding: 8px 8px;
+  background-color: #f55800;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 auto 6rem auto;
+  border: none;
+}
+
+.submit:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.submit:active {
+  background-color: #e05304;
 }
