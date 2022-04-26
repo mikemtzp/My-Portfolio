@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,12 +16,13 @@
   <header>
 
     <nav class="menu">
-      <p class="myname">Mike Martínez<p> 
+      <p class="myname">Mike Martínez
+      <p>
       <ul class="navlinks">
-      <li><img src="img/menu.png" alt="mail"></li>
+        <li><img src="img/menu.png" alt="mail"></li>
       </ul>
     </nav>
-    
+
   </header>
 
   <section class="headline">
@@ -35,7 +37,7 @@
         and have a project you need coded,
         don't hestiate to contact me.
       </p>
-  
+
       <div class="social">
         <ul>
           <li class="github"><img src="img/github.png" alt="github"></li>
@@ -51,18 +53,18 @@
 
   <section class="works">
 
-    
+
     <div class="w1">
 
       <h2 class="works-title">My Recent Works</h2>
       <span class="line-works"></span>
-      
-      <img class="w1-img" src="img/w1.png" alt="w1" >
+
+      <img class="w1-img" src="img/w1.png" alt="w1">
       <p class="w1-title">Multi-Post Stories</p>
       <p class="w1-text">
-      A daily selection of privately personalized reads; no accounts or sign-ups required.
-      has been the industry's standard dummy text ever since the 1500s, when an unknown
-      printer took a standard dummy text.</p>
+        A daily selection of privately personalized reads; no accounts or sign-ups required.
+        has been the industry's standard dummy text ever since the 1500s, when an unknown
+        printer took a standard dummy text.</p>
 
       <ul class="w1-lan">
         <li>css</li>
@@ -70,7 +72,7 @@
         <li>bootstrap</li>
         <li>Ruby</li>
       </ul>
-      
+
       <a class="w1-see">See Project</a>
 
     </div>
@@ -181,7 +183,7 @@
         <li class="lan-text">CapyBara</li>
         <li class="lan-text">Selenium</li>
       </ul>
-      
+
       <ul class="lan-group">
         <li><img src="img/skillsimg.png" alt="skills"></li>
         <li class="lan-title">Skills</li>
@@ -199,6 +201,27 @@
 
   </section>
 
+  <section class="contact">
+    <h2 class="text-contact">
+      I'm always <br> interested in hearing <br> about new projects, <br> so if you'd like to <br> chat please get in
+      touch.
+    </h2>
+
+    <form action="https://formspree.io/f/xlezoban" method="post">
+      <fieldset class="contact-me">
+        <input type="text" class="main" placeholder="Full name" name="name" maxlength="30" required>
+
+        <input type="email" class="main" placeholder="Email address" name="email" required>
+
+        <textarea name="message" cols="30" rows="5" class="text-area" placeholder="Enter text here" maxlength="500"
+          required></textarea>
+
+      </fieldset>
+      <div class="submit-button">
+        <button type="submit" class="submit">Get in touch</button>
+      </div>
+    </form>
+  </section>
 </body>
 
 </html>
