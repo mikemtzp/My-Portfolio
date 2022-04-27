@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.desk-navlinks {
+  display: none;
+}
+
 .menu {
   display: flex;
   background-color: #3e3c3c;
@@ -377,4 +381,81 @@ form {
 
 .submit:active {
   background-color: #e05304;
+}
+
+@media screen and (min-width: 768px) {
+  .headline {
+    background: #1c1a19 url(img/illustration-desk.png) 100% 50% no-repeat;
+    height: 800px;
+  }
+
+  .desk-navlinks {
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .desk-sections {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bolder;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+  .salute {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+    order: 2;
+    margin-left: 3rem;
+  }
+
+  h1 {
+    font-size: 85px;
+    line-height: 85px;
+  }
+
+  .title {
+    margin-top: 1rem;
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 1.5rem;
+  }
+
+  .social ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social ul li {
+    padding: 8px 10px;
+  }
+
+  .extra-space {
+    width: 85%;
+    order: 3;
+  }
+
+  .works {
+    height: auto;
+  }
+
 }
