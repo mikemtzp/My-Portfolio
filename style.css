@@ -392,6 +392,29 @@ form {
   background-color: #e05304;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-footer {
+  display: flex;
+  border-bottom: 1px solid #DFE1E6;
+  width: 100%;
+  align-self: center;
+}
+
+.social-footer ul {
+  margin: 1rem 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.social-footer li {
+  margin: 0 0.5rem;
+}
+
 @media screen and (min-width: 768px) {
 
   .headline {
@@ -578,6 +601,42 @@ form {
   .lan-text {
     justify-content: flex-start;
     font-size: 20px;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 4rem 5rem;
+    
+  }
+
+  .text-contact {
+    padding: 0;
+    width: 50%;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .br-contact {
+    display: none;
+  }
+
+  form {
+    margin-left: 1.5rem;
+  }
+
+  .contact-me {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .main,
+  .text-area {
+    width: 100%;
+  }
+
+  .submit-button {
+    justify-content: flex-start;
   }
 
 }
