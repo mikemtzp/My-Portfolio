@@ -195,7 +195,7 @@ h1 {
 .w2-project {
   background-image: url(img/workbackground.png);
   background-repeat: no-repeat;
-  background-size: 400px 400px;
+  background-size: cover;
   height: 410px;
   display: flex;
   flex-direction: column;
@@ -393,6 +393,7 @@ form {
 }
 
 @media screen and (min-width: 768px) {
+
   .headline {
     background: #1c1a19 url(img/illustration-desk.png) 100% 50% no-repeat;
     height: 800px;
@@ -516,6 +517,67 @@ form {
 
   .w1-lan {
     margin: 1rem 0;
+  }
+
+  .w2-project {
+    background-size: cover;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template: auto / auto auto auto;
+    margin: 0 3rem 5rem;
+    grid-column-gap: 1.5rem;
+  }
+
+  .w2 {
+    padding: 0;
+    
+  }
+
+  .about {
+    background: #1c1a19 url(img/about-img-desktop.png) 100% 50% no-repeat;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 3rem;
+  }
+
+  .about-text {
+    margin-bottom: 1rem;
+    font-size: 22px;
+  }
+
+  .programming {
+    height: auto;
+  }
+
+  .line-about {
+    width: 90%;
+  }
+
+  .program-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+  }
+
+  .program-group {
+    margin: 2rem 2rem;
+  }
+
+  .lan-group {
+    padding: 0;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+  }
+
+  .lan-text {
+    justify-content: flex-start;
+    font-size: 20px;
   }
 
 }
