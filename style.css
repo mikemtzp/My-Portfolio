@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.desk-navlinks {
+  display: none;
+}
+
 .menu {
   display: flex;
   background-color: #3e3c3c;
@@ -90,6 +94,10 @@ h1 {
   margin-bottom: 20px;
 }
 
+.social-footer li {
+  margin: 0 0.5rem;
+}
+
 .social ul li {
   padding: 15px 10px;
   list-style: none;
@@ -101,7 +109,7 @@ h1 {
 .works {
   display: grid;
   align-content: center;
-  height: 2000px;
+  margin: 5rem 0;
 }
 
 .w1 {
@@ -110,22 +118,30 @@ h1 {
   padding: 0 23px;
 }
 
+.recent-works {
+  height: auto;
+  margin-bottom: 10px;
+}
+
 .works-title {
-  font-size: 38px;
+  font-size: 30px;
   font-family: sans-serif;
   font-weight: 700;
   color: #1c1a19;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .line-works {
+  display: flex;
   border-bottom: 1px solid #212121;
   width: 100%;
   align-self: center;
 }
 
 .w1-img {
-  padding-top: 70px;
+  width: 100%;
+  margin-top: 3.5rem;
 }
 
 .w1-title {
@@ -160,7 +176,7 @@ h1 {
   font-family: sans-serif;
   font-weight: 500;
   font-size: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   border: none;
 }
 
@@ -181,13 +197,29 @@ h1 {
 }
 
 .w2-project {
-  background-image: url(img/workbackground.png);
-  background-repeat: no-repeat;
-  background-size: 400px 400px;
-  height: 400px;
+  height: 386px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.w2-img1 {
+  background-image: url(img/workbackground1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.w2-img2 {
+  background-image: url(img/workbackground2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.w2-img3 {
+  background-image: url(img/workbackground3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .project-title {
@@ -251,12 +283,12 @@ h1 {
   flex-direction: column;
   justify-content: center;
   padding: 0 23px;
-  height: 550px;
+  height: 600px;
 }
 
 .about-title {
   color: #ff6b00;
-  font-size: 80px;
+  font-size: 65px;
   padding-bottom: 10px;
 }
 
@@ -266,6 +298,7 @@ h1 {
   font-weight: lighter;
   line-height: 25px;
   padding: 10px 0;
+  margin-bottom: 1rem;
 }
 
 .line-about {
@@ -377,4 +410,256 @@ form {
 
 .submit:active {
   background-color: #e05304;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-footer {
+  display: flex;
+  border-bottom: 1px solid #dfe1e6;
+  width: 100%;
+  align-self: center;
+}
+
+.social-footer ul {
+  margin: 1rem 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .headline {
+    background: #1c1a19 url(img/illustration-desk.png) 100% 50% no-repeat;
+    height: 800px;
+  }
+
+  .desk-navlinks {
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .desk-sections {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bolder;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+  .salute {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+    order: 2;
+    margin-left: 3rem;
+  }
+
+  h1 {
+    font-size: 85px;
+    line-height: 85px;
+  }
+
+  .title {
+    margin-top: 1rem;
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 1.5rem;
+  }
+
+  .social ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social ul li {
+    padding: 8px 10px;
+  }
+
+  .extra-space {
+    width: 85%;
+    order: 3;
+  }
+
+  .works {
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .w1 {
+    margin: 6rem 3rem 1rem 3rem;
+    padding: 0;
+  }
+
+  .recent-works {
+    display: flex;
+    justify-content: center;
+  }
+
+  .works-title {
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+
+  .line-works {
+    border-bottom: 1px solid #212121;
+    width: 60%;
+    align-self: center;
+    margin-left: 1rem;
+  }
+
+  .works-intro {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: auto;
+    margin-top: 3rem;
+  }
+
+  .w1-img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .works-intro-text {
+    margin: 0 1rem;
+  }
+
+  .w1-title {
+    margin-top: 0;
+  }
+
+  .w1-text {
+    margin-top: 1rem;
+  }
+
+  .w1-lan {
+    margin: 1rem 0;
+  }
+
+  .w2-project {
+    background-size: cover;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template: auto auto / auto auto auto;
+    margin: 0 3rem 5rem 3rem;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1.5rem;
+  }
+
+  .w2 {
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .project-group {
+    margin-top: 10rem;
+  }
+
+  .project-see {
+    display: none;
+  }
+
+  .about {
+    background: #1c1a19 url(img/about-img-desktop.png) 100% 50% no-repeat;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 3rem;
+  }
+
+  .about-text {
+    margin-bottom: 1rem;
+    font-size: 22px;
+  }
+
+  .programming {
+    height: auto;
+  }
+
+  .line-about {
+    width: 90%;
+  }
+
+  .program-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+  }
+
+  .program-group {
+    margin: 2rem 2rem;
+  }
+
+  .lan-group {
+    padding: 0;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+  }
+
+  .lan-text {
+    justify-content: flex-start;
+    font-size: 20px;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 4rem 5rem;
+  }
+
+  .text-contact {
+    padding: 0;
+    width: 50%;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .br-contact {
+    display: none;
+  }
+
+  form {
+    margin-left: 1.5rem;
+  }
+
+  .contact-me {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .main,
+  .text-area {
+    width: 100%;
+  }
+
+  .submit-button {
+    justify-content: flex-start;
+  }
 }
