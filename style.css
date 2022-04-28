@@ -105,7 +105,7 @@ h1 {
 .works {
   display: grid;
   align-content: center;
-  height: 2000px;
+  height: 2010px;
 }
 
 .w1 {
@@ -114,22 +114,30 @@ h1 {
   padding: 0 23px;
 }
 
+.recent-works {
+  height: auto;
+  margin-bottom: 10px;
+}
+
 .works-title {
   font-size: 38px;
   font-family: sans-serif;
   font-weight: 700;
   color: #1c1a19;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .line-works {
+  display: flex;
   border-bottom: 1px solid #212121;
   width: 100%;
   align-self: center;
 }
 
 .w1-img {
-  padding-top: 70px;
+  width: 100%;
+  margin-top: 3.5rem;
 }
 
 .w1-title {
@@ -164,7 +172,7 @@ h1 {
   font-family: sans-serif;
   font-weight: 500;
   font-size: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   border: none;
 }
 
@@ -188,10 +196,11 @@ h1 {
   background-image: url(img/workbackground.png);
   background-repeat: no-repeat;
   background-size: 400px 400px;
-  height: 400px;
+  height: 410px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-top: 10px;
 }
 
 .project-title {
@@ -456,6 +465,57 @@ form {
 
   .works {
     height: auto;
+  }
+
+  .w1 {
+    margin: 6rem 3rem 1rem;
+    padding: 0;
+  }
+
+  .recent-works {
+    display: flex;
+    justify-content: center;
+  }
+
+  .works-title {
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+
+  .line-works {
+    border-bottom: 1px solid #212121;
+    width: 60%;
+    align-self: center;
+    margin-left: 1rem;
+  }
+
+  .works-intro {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: auto;
+    margin-top: 3rem;
+  }
+
+  .w1-img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .works-intro-text {
+    margin-left: 1rem;
+  }
+
+  .w1-title {
+    margin-top: 0;
+  }
+
+  .w1-text {
+    margin-top: 1rem;
+  }
+
+  .w1-lan {
+    margin: 1rem 0;
   }
 
 }
