@@ -27,8 +27,6 @@ $ open index.html file
 - Twitter: [@mikemtzp](https://twitter.com/mikemtzp)
 - LinkedIn: [Migue Martínez Prieto](https://www.linkedin.com/in/miguel-mart%C3%ADnez-prieto-a42406166/)
 
-## Authors
-
 👤 Mauricio Gallegos
 
 - GitHub: https://github.com/maury18
