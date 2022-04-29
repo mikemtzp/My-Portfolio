@@ -23,6 +23,29 @@
   font-size: 15px;
 }
 
+.myname {
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+.myname:hover {
+  border: 3px solid #3e3c3c;
+  padding: 5px;
+  background-color: #fff;
+  color: #3e3c3c;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
 .navlinks li {
   display: inline-block;
   padding: 5px 8px;
@@ -79,7 +102,7 @@ h1 {
 }
 
 .social li {
-  transition: all 0.5s ease-out
+  transition: all 0.5s ease-out;
 }
 
 .social li:hover {
@@ -104,7 +127,7 @@ h1 {
 
 .social-footer li {
   margin: 0 0.5rem;
-  transition: all 0.5s ease-out
+  transition: all 0.5s ease-out;
 }
 
 .social-footer li:hover {
@@ -191,7 +214,7 @@ h1 {
   font-size: 15px;
   margin-bottom: 25px;
   border: none;
-  transition: all 0.5s ease-out
+  transition: all 0.5s ease-out;
 }
 
 .w1-see:hover {
@@ -387,7 +410,7 @@ form {
   margin-bottom: 1.2rem;
   font-family: sans-serif;
   font-size: 1rem;
-  transition: all 0.5s ease-out
+  transition: all 0.5s ease-out;
 }
 
 .text-area {
@@ -417,7 +440,7 @@ form {
   font-size: 1rem;
   margin-bottom: 6rem;
   border: none;
-  transition: all 0.5s ease-out
+  transition: all 0.5s ease-out;
 }
 
 .submit:hover {
