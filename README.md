@@ -8,6 +8,9 @@
 - Linters: Lighthouse, Webhint & Stylelint
 - Formspree
 
+## Live demo
+- [Live Demo Link](https://mikemtzp.github.io/my-portfolio/)
+
 ## Setup
 
 Follow these steps on your console to properly clone this repository on your desktop:
@@ -25,13 +28,13 @@ $ open index.html file
 
 - GitHub: [@mikemtzp](https://github.com/mikemtzp)
 - Twitter: [@mikemtzp](https://twitter.com/mikemtzp)
-- LinkedIn: [Migue Martínez Prieto](https://www.linkedin.com/in/miguel-mart%C3%ADnez-prieto-a42406166/)
+- LinkedIn: [Miguel Martínez Prieto](https://www.linkedin.com/in/miguel-mart%C3%ADnez-prieto-a42406166/)
 
 👤 Mauricio Gallegos
 
-- GitHub: https://github.com/maury18
-- Twitter: https://twitter.com/MauryRodrguez6
-- LinkedIn:https://www.linkedin.com/in/mauricio-gallegos-rodr%C3%ADguez-380a96183/
+- GitHub: [@maury18]https://github.com/maury18
+- Twitter: [@MauryRodrguez6]https://twitter.com/MauryRodrguez6
+- LinkedIn: [Mauricio Gallegos Rodríguez](https://www.linkedin.com/in/mauricio-gallegos-rodr%C3%ADguez-380a96183/)
 
 ## 🤝 Contributing
 
