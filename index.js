@@ -21,3 +21,9 @@ function openHamMenu() {
 }
 
 hamburger.addEventListener("click", openHamMenu);
+
+menuItems.forEach( 
+  function(deskSections) { 
+    deskSections.addEventListener("click", openHamMenu);
+  }
+)

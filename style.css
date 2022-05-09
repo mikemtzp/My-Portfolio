@@ -6,6 +6,7 @@
 
 .desk-navlinks {
   /* display: none; */
+  display:grid;
   position: fixed;
   transform: translateY(-100%);
   transition: transform 0.2s;
@@ -14,14 +15,24 @@
   right: 0;
   bottom: 0;
   z-index: 99;
-  background: black;
+  background: #3e3c3c;
   color: white;
   list-style: none;
   padding-top: 4rem;
+  border-bottom: 1px solid white;
+    /* text-decoration: none; */
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* height: auto; */
+    grid-template-columns: auto;
+    grid-template-rows: 50px 50px 50px 50px;
 }
 
 .open-menu {
- transform: translateY(-50%);
+ transform: translateY(0);
+ transition: transform 0.2s;
 }
 
 .menu {
@@ -49,6 +60,7 @@
 
 .close-icon {
   display: none;
+  justify-self:end;
 }
 
 .navlinks li {
