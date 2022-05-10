@@ -3,7 +3,7 @@
 // hamburguer = navlinks
 
 const menu = document.querySelector(".desk-navlinks");
-const menuItems = document.querySelectorAll(".desk-sections");
+const menuItems = document.querySelectorAll(".menu-items");
 const hamburger = document.querySelector(".navlinks");
 const closeIcon = document.querySelector(".close-icon");
 const menuIcon = document.querySelector(".menu-icon");
