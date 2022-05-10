@@ -33,3 +33,7 @@ let project6 = {name: "Multi-Post Stories" , description: "lorem ipsum", image: 
 let project7 = {name: "Multi-Post Stories" , description: "lorem ipsum", image: "img/w1.png", technology: "HTML", livelink: "#" ,sourcelink: "#" };
 
 let projectsArr = [project1, project2, project3, project4, project5, project6, project7];
+
+function popup() {
+  const div1 = document.createElement("div");
+}
