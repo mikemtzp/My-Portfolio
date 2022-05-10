@@ -24,13 +24,61 @@ menuItems.forEach(
   },
 );
 
-let project1 = {name: "Multi-Post Stories" , description: "lorem ipsum", image: "img/w1.png", technology: "HTML", livelink: "#" ,sourcelink: "#" };
-let project2 = {name: "Multi-Post Stories" , description: "lorem ipsum", image: "img/w1.png", technology: "HTML", livelink: "#" ,sourcelink: "#" };
-let project3 = {name: "Multi-Post Stories" , description: "lorem ipsum", image: "img/w1.png", technology: "HTML", livelink: "#" ,sourcelink: "#" };
-let project4 = {name: "Multi-Post Stories" , description: "lorem ipsum", image: "img/w1.png", technology: "HTML", livelink: "#" ,sourcelink: "#" };
-let project5 = {name: "Multi-Post Stories" , description: "lorem ipsum", image: "img/w1.png", technology: "HTML", livelink: "#" ,sourcelink: "#" };
-let project6 = {name: "Multi-Post Stories" , description: "lorem ipsum", image: "img/w1.png", technology: "HTML", livelink: "#" ,sourcelink: "#" };
-let project7 = {name: "Multi-Post Stories" , description: "lorem ipsum", image: "img/w1.png", technology: "HTML", livelink: "#" ,sourcelink: "#" };
+const projects = [
+  {
+    name: "Multi-Post Stories",
+    description: "lorem ipsum",
+    image: "./img/w1.png",
+    technology: ["HTML", "CSS", "Javascript"],
+    livelink: "#",
+    sourcelink: "#"
+  },
+
+ {
+    name: "Multi-Post Stories",
+    description: "lorem ipsum",
+    image: "./img/w1.png",
+    technology: ["HTML", "CSS", "Javascript"],
+    livelink: "#",
+    sourcelink: "#"
+  },
+
+  {
+    name: "Multi-Post Stories",
+    description: "lorem ipsum",
+    image: "./img/w1.png",
+    technology: ["HTML", "CSS", "Javascript"],
+    livelink: "#",
+    sourcelink: "#"
+  },
+
+  {
+    name: "Multi-Post Stories",
+    description: "lorem ipsum",
+    image: "./img/w1.png",
+    technology: ["HTML", "CSS", "Javascript"],
+    livelink: "#",
+    sourcelink: "#"
+  },
+
+  {
+    name: "Multi-Post Stories",
+    description: "lorem ipsum",
+    image: "./img/w1.png",
+    technology: ["HTML", "CSS", "Javascript"],
+    livelink: "#",
+    sourcelink: "#"
+  },
+
+  {
+    name: "Multi-Post Stories",
+    description: "lorem ipsum",
+    image: "./img/w1.png",
+    technology: ["HTML", "CSS", "Javascript"],
+    livelink: "#",
+    sourcelink: "#"
+  },
+];
 
 let projectsArr = [project1, project2, project3, project4, project5, project6, project7];
 
