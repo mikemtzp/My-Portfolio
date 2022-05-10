@@ -5,7 +5,7 @@
 ## Built With
 
 - HTML & CSS
-- Linters: Lighthouse, Webhint & Stylelint
+- Linters: Lighthouse, Webhint, Stylelint & ESlint
 - Formspree
 
 ## Live demo

@@ -5,7 +5,7 @@
 }
 
 .desk-navlinks {
-  display:grid;
+  display: grid;
   position: fixed;
   transform: translateY(-100%);
   transition: transform 0.2s;
@@ -22,7 +22,7 @@
 }
 
 .desktop-menu {
-    display: none;
+  display: none;
 }
 
 .menu-items {
@@ -36,7 +36,7 @@
 
 .line-menu {
   display: flex;
-  border-bottom: 1px solid #6F6C6B;
+  border-bottom: 1px solid #6f6c6b;
   width: 100%;
   align-self: center;
 }
@@ -46,8 +46,8 @@
 }
 
 .open-menu {
- transform: translateY(0);
- transition: transform 0.2s;
+  transform: translateY(0);
+  transition: transform 0.2s;
 }
 
 .menu {
