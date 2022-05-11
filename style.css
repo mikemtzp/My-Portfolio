@@ -5,22 +5,23 @@
 }
 
 /* Popup */
-.popupStart {
-display:flex;
-justify-content: center;
-display: none;
-}
-
 .popup {
   position: fixed;
   width: 95%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   z-index: 10;
-  background:green;
-  gap: 20px;
+  background:#fff;
+  gap: 15px;
   margin: 10% 2%;
+  transform: scale(0);
+  transition: 200ms ease-out;
+}
+
+.popup.active {
+  transform: scale(1);
 }
 
 .popupIntro {
@@ -36,7 +37,7 @@ align-self:flex-start;
 font-family: Roboto, sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 32px;
+font-size: 30px;
 line-height: 44px;
 color: #172B4D;
 }
@@ -56,11 +57,11 @@ color: #172B4D;
   justify-content: flex-start;
   gap: 10px;
   font-family: Poppins, sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 13px;
-line-height: 16px;
-color: #3C3A39;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3C3A39;
 }
 
 .listItemPopup {
@@ -74,12 +75,12 @@ color: #3C3A39;
 }
 
 .popupDescription {
-  width: 95%;
-  font-family: Inter, sans-serif;
+width: 95%;
+font-family: Inter, sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 24px;
+line-height: 20px;
 color: #344563;
 }
 
@@ -110,18 +111,20 @@ line-height: 24px;
 }
 
 #blurry {
-  filter: blur(5px);
   position: fixed;
-  opacity:0;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+  opacity: 0;
+  transition: 200ms ease-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
   pointer-events: none;
 }
 
 #blurry.active {
-  opacity:1;
+  opacity: 1;
   pointer-events: all;
 }
 

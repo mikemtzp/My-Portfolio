@@ -105,7 +105,7 @@ Array.forEach(
 
 function popupWindow(project) {
   //Create elements
-  const popupStart = document.createElement("div");
+  //const popupStart = document.createElement("div");
   const popup = document.createElement("div");
   const popupIntro = document.createElement("div");
   let popupName = document.createElement("h2");
@@ -116,7 +116,9 @@ function popupWindow(project) {
   let popupDescription = document.createElement("p");
   let popupSources = document.createElement("div");
   let popupLive = document.createElement("button");
+  let popupLiveImg = document.createElement("img")
   let popupSource = document.createElement("button");
+  let popupSourceImg = document.createElement("img")
   const blurry = document.createElement("div");
 
   //Create li elements for technology ul
@@ -130,41 +132,41 @@ function popupWindow(project) {
   // Add text to elements
   popupName.textContent = projects.name;
   popupClose.textContent = "&times;";
-  popupImg.textContent = projects.image;
+  // popupImg.textContent = projects.image;
   popupDescription.textContent = projects.description;
   popupLive.textContent = "See Live";
   popupSource.textContent = "See Source";
 
-//Add classes to elements
-popupStart.classList.add("popupStart");
-popup.classList.add("popup");
-popupIntro.classList.add("popupIntro");
-popupName.classList.add("popupName");
-popupClose.classList.add("popupClose");
-popupButtons.classList.add("popupButtons");
-popupButtonsul.classList.add("popupButtons");
-popupImg.classList.add("popupImg");
-popupDescription.classList.add("popupDescription");
-popupSources.classList.add("popupSources");
-popupLive.classList.add("popupLive");
-popupSource.classList.add("popupSource");
+  //Add classes to elements
+  //popupStart.classList.add("popupStart");
+  popup.classList.add("popup");
+  popupIntro.classList.add("popupIntro");
+  popupName.classList.add("popupName");
+  popupClose.classList.add("popupClose");
+  popupButtons.classList.add("popupButtons");
+  popupButtonsul.classList.add("popupButtons");
+  popupImg.classList.add("popupImg");
+  popupDescription.classList.add("popupDescription");
+  popupSources.classList.add("popupSources");
+  popupLive.classList.add("popupLive");
+  popupSource.classList.add("popupSource");
 
- //Add attributes to elements
- projects.image.forEach(item => {
-   let imgSrc = projects.image[item];
-   popupImg.setAttribute("src", imgSrc);
- });
- projects.livelink.forEach(item => {
-  let liveSrc = projects.livelink[item];
-  popupLive.setAttribute("src", liveSrc);
-});
-projects.sourcelink.forEach(item => {
-  let linkSrc = projects.sourcelink[item];
-  popupSource.setAttribute("src", linkSrc);
-});
+  //Add attributes to elements
+  projects.image.forEach(item => {
+    let imgSrc = projects.image[item];
+    popupImg.setAttribute("src", imgSrc);
+  });
+  projects.livelink.forEach(item => {
+    let liveSrc = projects.livelink[item];
+    popupLive.setAttribute("src", liveSrc);
+  });
+  projects.sourcelink.forEach(item => {
+    let linkSrc = projects.sourcelink[item];
+    popupSource.setAttribute("src", linkSrc);
+  });
   
-  popupLive.setAttribute("src", "./img/Live.png");
-  popupSource.setAttributeNS("src", "./img/GitHub-popup.png")
+  popupLiveImg.setAttribute("src", "./img/Live.png");
+  popupSourceImg.setAttribute("src", "./img/GitHub-popup.png")
 
   //Append children to parents
   popupStart.appendChild(popup);
@@ -179,6 +181,8 @@ projects.sourcelink.forEach(item => {
   popup.appendChild(popupSources);
   popupSources.appendChild(popupLive);
   popupSources.appendChild(popupSource);
+  popupLive.appendChild(popupLiveImg);
+  popupSource.appendChild(popupSourceImg);
 
   //Appends main elements to body
   document.body.appendChild(popupStart);
@@ -188,6 +192,8 @@ projects.sourcelink.forEach(item => {
 button.addEventListener((evt) => {
   popupWindow("click", project);
 });
+
+function
 const blurry = document.createElement("div");
 
 
@@ -201,15 +207,21 @@ const blurry = document.createElement("div");
 
 const button1 = document.querySelector(`#${projects[0].id}`);
 button1.addEventListener('click', () => { popupWindow(projects[0]); });
+
 const button2 = document.querySelector(`#${projects[1].id}`);
 button2.addEventListener('click', () => { popupWindow(projects[1]); });
+
 const button3 = document.querySelector(`#${projects[2].id}`);
 button3.addEventListener('click', () => { popupWindow(projects[2]); });
+
 const button4 = document.querySelector(`#${projects[3].id}`);
 button4.addEventListener('click', () => { popupWindow(projects[3]); });
+
 const button5 = document.querySelector(`#${projects[4].id}`);
 button5.addEventListener('click', () => { popupWindow(projects[4]); });
+
 const button6 = document.querySelector(`#${projects[5].id}`);
 button6.addEventListener('click', () => { popupWindow(projects[5]); });
+
 const button7 = document.querySelector(`#${projects[6].id}`);
 button7.addEventListener('click', () => { popupWindow(projects[6]); });
