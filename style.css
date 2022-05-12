@@ -839,6 +839,10 @@ footer {
 
   /* Pop Up */
 
+  .popupDesktop {
+    margin: 5%
+  }
+
   .flexpop {
     display: grid;
     grid-template-columns: 55% 45%;
