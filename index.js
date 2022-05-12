@@ -171,3 +171,56 @@ for (let i = 0; i < projects.length; i += 1) {
     });
   });
 }
+
+// Validate contact form
+const form = document.querySelector('.actualForm');
+const email = document.getElementById('mail');
+const error = document.getElementById('error');
+
+function validateEmail(event) {
+  const message = [];
+  event.preventDefault();
+  if (email.value !== email.value.toLowerCase()) {
+    error.style.display = 'block';
+    message.push('Email must be in lowercase');
+    error.innerText = message.join(', ');
+  } else {
+    form.submit();
+  }
+}
+
+form.addEventListener('submit', validateEmail);
+
+// Local storage
+const username = document.getElementById('username');
+const mail = document.getElementById('mail');
+const message = document.getElementById('message');
+const formButton = document.getElementById('formButton');
+
+function storeData() {
+  const nameValue = username.value;
+  const mailValue = mail.value;
+  const messageValue = message.value;
+  const user = {
+    nameValue,
+    mailValue,
+    messageValue,
+  };
+  if (nameValue && mailValue && messageValue) {
+    const stringedUser = JSON.stringify(user);
+    localStorage.setItem('user', stringedUser);
+  }
+}
+
+formButton.addEventListener('click', storeData);
+username.addEventListener('keyup', storeData);
+mail.addEventListener('keyup', storeData);
+message.addEventListener('keyup', storeData);
+
+// Pre-filled data
+if (localStorage.getItem('user')) {
+  const user = JSON.parse(localStorage.getItem('user'));
+  username.value = user.nameValue;
+  mail.value = user.mailValue;
+  message.value = user.messageValue;
+}
