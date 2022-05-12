@@ -45,12 +45,13 @@
   position: fixed;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   z-index: 10;
   gap: 15px;
   margin: 10% 5%;
   transition: 200ms ease-out;
   inset: 0 0 0 0;
+  height: fit-content;
 }
 
 .popup.active {
@@ -857,6 +858,7 @@ footer {
 
   .popup {
     padding: 2% 2%;
+    bottom: 15%;
   }
 
   .popup.active {
