@@ -4,7 +4,7 @@
 
 ## Built With
 
-- HTML & CSS
+- HTML, CSS & Javascript
 - Linters: Lighthouse, Webhint, Stylelint & ESlint
 - Formspree
 
@@ -32,9 +32,15 @@ $ open index.html file
 
 👤 Mauricio Gallegos
 
-- GitHub: [@maury18]https://github.com/maury18
-- Twitter: [@MauryRodrguez6]https://twitter.com/MauryRodrguez6
+- GitHub: [@maury18](https://github.com/maury18)
+- Twitter: [@MauryRodrguez6](https://twitter.com/MauryRodrguez6)
 - LinkedIn: [Mauricio Gallegos Rodríguez](https://www.linkedin.com/in/mauricio-gallegos-rodr%C3%ADguez-380a96183/)
+
+👤 Dafne Azzolina
+
+- GitHub: [@Daf98](https://github.com/Daf98)
+- Twitter: [@dafne_azzolina](https://twitter.com/dafne_azzolina)
+- LinkedIn: [dafne-azzolina](https://www.linkedin.com/in/dafne-azzolina/)
 
 ## 🤝 Contributing
 
