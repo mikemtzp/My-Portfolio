@@ -26,202 +26,143 @@ menuItems.forEach(
 
 const projects = [
   {
-    name: "Multi-Post Stories",
+    name: "Profesional Art Printing Data",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image: "./img/w1.png",
+    image: "./img/workbackground1.png",
     technology: ["HTML", "CSS", "Javascript"],
     livelink: "#",
     sourcelink: "#",
-    id: "btn1"
+    id: "btn1",
+    class: "w2-img1"
   },
 
  {
-    name: "Profesional Art Printing Data",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image: "./img/w1.png",
-    technology: ["HTML", "CSS", "Javascript"],
-    livelink: "#",
-    sourcelink: "#",
-    id: "btn2"
-  },
-
-  {
     name: "Data Dashboard Healthcare",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image: "./img/w1.png",
+    image: "./img/workbackground2.png",
     technology: ["HTML", "CSS", "Javascript"],
     livelink: "#",
     sourcelink: "#",
-    id: "btn3"
+    id: "btn2",
+    class: "w2-img2"
   },
 
   {
     name: "Website Protfolio",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image: "./img/w1.png",
-    technology: ["HTML", "CSS"],
+    image: "./img/workbackground3.png",
+    technology: ["HTML", "CSS", "Javascript"],
     livelink: "#",
     sourcelink: "#",
-    id: "btn4"
+    id: "btn3",
+    class: "w2-img3"
   },
 
   {
     name: "Profesional Art Printing Data",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image: "./img/w1.png",
-    technology: ["HTML", "CSS", "Javascript"],
+    image: "./img/workbackground1.png",
+    technology: ["HTML", "CSS", "Bootstrap"],
     livelink: "#",
     sourcelink: "#",
-    id: "btn5"
+    id: "btn4",
+    class: "w2-img1"
   },
 
   {
     name: "Data Dashboard Healthcare",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image: "./img/w1.png",
-    technology: ["HTML", "CSS", "Javascript", "Bootstrap"],
+    image: "./img/workbackground2.png",
+    technology: ["HTML", "CSS", "Javascript"],
     livelink: "#",
     sourcelink: "#",
-    id: "btn6"
+    id: "btn5",
+    class: "w2-img2"
   },
 
   {
-    name: "Profesional Art Printing Data",
+    name: "Website Protfolio",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image: "./img/w1.png",
-    technology: ["HTML", "CSS", "Bootstrap"],
+    image: "./img/workbackground3.png",
+    technology: ["HTML", "CSS", "Javascript", "Bootstrap"],
     livelink: "#",
     sourcelink: "#",
-    id: "btn7"
+    id: "btn6",
+    class: "w2-img3"
   }
+
 ];
 
-//Loop through each object in the array
-Array.forEach(
-  (project) => {
-    popupWindow(project);
-  }
-)
+const body = document.querySelector("body");
+const wholeProjects = document.createElement("div");
+wholeProjects.classList.add("projects-container");
 
-function popupWindow(project) {
-  //Create elements
-  //const popupStart = document.createElement("div");
-  const popup = document.createElement("div");
-  const popupIntro = document.createElement("div");
-  let popupName = document.createElement("h2");
-  let popupClose = document.createElement("button");
-  const popupButtons = document.createElement("div");
-  const popupButtonsul = document.createElement("ul");
-  let popupImg = document.createElement("img");
-  let popupDescription = document.createElement("p");
-  let popupSources = document.createElement("div");
-  let popupLive = document.createElement("button");
-  let popupLiveImg = document.createElement("img")
-  let popupSource = document.createElement("button");
-  let popupSourceImg = document.createElement("img")
-  const blurry = document.createElement("div");
+const aboutMe = document.querySelector(".about-me");
+body.insertBefore(wholeProjects, aboutMe);
 
-  //Create li elements for technology ul
-  projects.technology.each(item => {
-    let listItemPopup = document.createElement("li");
-    listItemPopup.classList.add = "listItemPopup";
-    listItemPopup.textContent = projects.technology[item];
-    popupButtonsul.appendChild("li");
-  })
+for (let i=0; i<projects.length; i++) {
 
-  // Add text to elements
-  popupName.textContent = projects.name;
-  popupClose.textContent = "&times;";
-  // popupImg.textContent = projects.image;
-  popupDescription.textContent = projects.description;
-  popupLive.textContent = "See Live";
-  popupSource.textContent = "See Source";
+  const div = document.createElement("div");
+  div.classList.add("w2");
+  div.classList.add(projects[i].class);
+  wholeProjects.appendChild(div);
 
-  //Add classes to elements
-  //popupStart.classList.add("popupStart");
-  popup.classList.add("popup");
-  popupIntro.classList.add("popupIntro");
-  popupName.classList.add("popupName");
-  popupClose.classList.add("popupClose");
-  popupButtons.classList.add("popupButtons");
-  popupButtonsul.classList.add("popupButtons");
-  popupImg.classList.add("popupImg");
-  popupDescription.classList.add("popupDescription");
-  popupSources.classList.add("popupSources");
-  popupLive.classList.add("popupLive");
-  popupSource.classList.add("popupSource");
-
-  //Add attributes to elements
-  projects.image.forEach(item => {
-    let imgSrc = projects.image[item];
-    popupImg.setAttribute("src", imgSrc);
-  });
-  projects.livelink.forEach(item => {
-    let liveSrc = projects.livelink[item];
-    popupLive.setAttribute("src", liveSrc);
-  });
-  projects.sourcelink.forEach(item => {
-    let linkSrc = projects.sourcelink[item];
-    popupSource.setAttribute("src", linkSrc);
-  });
-  
-  popupLiveImg.setAttribute("src", "./img/Live.png");
-  popupSourceImg.setAttribute("src", "./img/GitHub-popup.png")
-
-  //Append children to parents
-  popupStart.appendChild(popup);
-  popup.appendChild(popupIntro);
-  popupIntro.appendChild(popupName);
-  popupIntro.appendChild(popupClose);
-  popup.appendChild(popupButtons);
-  popupButtons.appendChild(popupButtonsul);
-  popupButtonsul.appendChild(listItemPopup);
-  popup.appendChild(popupImg);
-  popup.appendChild(popupDescription);
-  popup.appendChild(popupSources);
-  popupSources.appendChild(popupLive);
-  popupSources.appendChild(popupSource);
-  popupLive.appendChild(popupLiveImg);
-  popupSource.appendChild(popupSourceImg);
-
-  //Appends main elements to body
-  document.body.appendChild(popupStart);
-  document.body.appendChild(blurry);
+  div.innerHTML = `
+  <div class="w2-project">
+    <div class="project-group">
+      <h2 class="project-title">${projects[i].name}</h2>
+      <p class="project-text">${projects[i].description}</p>
+      <ul class="project-lan">
+        <li>${projects[i].technology[0]}</li>
+        <li>${projects[i].technology[1]}</li>
+        <li>${projects[i].technology[2]}</li>
+      </ul>
+    </div>
+    <button type="button" class="project-see">See Project</button>
+  </div>
+  `;
 }
-//Add event listener to check for clicks
-button.addEventListener((evt) => {
-  popupWindow("click", project);
-});
 
-function
-const blurry = document.createElement("div");
-
-
-//Add event listener for buttons
-/* projects.id.forEach(
-  (item, i) => {
-    const projectButtons = document.querySelectorAll(`#${projects[i].id}`);
-    projectButtons.addEventListener('click', openHamMenu);
-  },
-); */
-
-const button1 = document.querySelector(`#${projects[0].id}`);
-button1.addEventListener('click', () => { popupWindow(projects[0]); });
-
-const button2 = document.querySelector(`#${projects[1].id}`);
-button2.addEventListener('click', () => { popupWindow(projects[1]); });
-
-const button3 = document.querySelector(`#${projects[2].id}`);
-button3.addEventListener('click', () => { popupWindow(projects[2]); });
-
-const button4 = document.querySelector(`#${projects[3].id}`);
-button4.addEventListener('click', () => { popupWindow(projects[3]); });
-
-const button5 = document.querySelector(`#${projects[4].id}`);
-button5.addEventListener('click', () => { popupWindow(projects[4]); });
-
-const button6 = document.querySelector(`#${projects[5].id}`);
-button6.addEventListener('click', () => { popupWindow(projects[5]); });
-
-const button7 = document.querySelector(`#${projects[6].id}`);
-button7.addEventListener('click', () => { popupWindow(projects[6]); });
+const open = document.querySelectorAll(".project-see");
+for (let i = 0; i < projects.length; i++) {
+  open[i].addEventListener('click', ()=> {
+      console.log("clicked");
+      const main = document.createElement("div");
+      main.className = "mainpop";
+      const popup = document.createElement("div");
+      popup.className = "popupDesktop";
+      popup.innerHTML = `
+      <div class="popup">
+      <div class="popupIntro">
+        <h2 class="popupName">${projects[i].name}</h2>
+        <button class="popupClose">&times;</button>
+      </div>
+      <div class="popupButtons">
+        <ul class="popupButtons">
+          <li class="listItemPopup">${projects[i].technology[0]}</li>
+          <li class="listItemPopup">${projects[i].technology[1]}</li>
+          <li class="listItemPopup">${projects[i].technology[2]}</li>
+        </ul>
+      </div>
+      <div class="flexpop">
+      <img src=${projects[i].image} class="popupImg">
+      <p class="popupDescription">${projects[i].description}</p>
+      <div class="popupSources">
+        <button class="popupLive">See Live<img src=${projects[i].livelink} alt=""></button>
+        <button class="popupSource">See Source<img src=${projects[i].sourcelink} alt=""></button>
+      </div>
+      </div>
+    </div>
+    <div id="blurry"></div>
+      `;
+  
+      main.appendChild(popup);
+      body.appendChild(main);
+  
+      const close = document.querySelector(".popupClose");
+      close.addEventListener("click", ()=> {
+          console.log("closed");
+          body.removeChild(main);
+      });
+  });
+};
