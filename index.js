@@ -127,7 +127,7 @@ for (let i = 0; i < projects.length; i += 1) {
 
 document.querySelectorAll('.w2-project').forEach((item) => {
   item.addEventListener('mouseenter', (e) => {
-    e.target.lastChild.classList.add('hiddenButton');
+    e.targe.lastChild.classList.add('hiddenButton');
   });
 
   item.addEventListener('mouseleave', (e) => {
@@ -136,7 +136,7 @@ document.querySelectorAll('.w2-project').forEach((item) => {
 });
 
 const open = document.querySelectorAll('.project-see');
-for (let i = 0; i < projects.length; i += 1) {
+for (let i = 0; i < projeects.length; i += 1) {
   open[i].addEventListener('click', () => {
     const popup = document.createElement('div');
     popup.className = 'popupDesktop';
@@ -174,7 +174,7 @@ for (let i = 0; i < projects.length; i += 1) {
 
 // Validate contact form
 const form = document.querySelector('.actualForm');
-const email = document.getElementById('mail');
+const email = document.getElementById('mail);
 const error = document.getElementById('error');
 
 function validateEmail(event) {
@@ -182,7 +182,7 @@ function validateEmail(event) {
   event.preventDefault();
   if (email.value !== email.value.toLowerCase()) {
     error.style.display = 'block';
-    message.push('Email must be in lowercase');
+    messages.push('Email must be in lowercase');
     error.innerText = message.join(', ');
   } else {
     form.submit();
