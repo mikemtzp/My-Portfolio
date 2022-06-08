@@ -1,6 +1,6 @@
-# Building My Portfolio.
+# My Portfolio
 
-> In this project, I will build my portfolio website based on a Figma Template. My goal here is to practice the use of flexbox, grid and my HTML and CSS abilities to build similar sections of a webpage. No complex coding is required for this exercise at the moment.
+> Here you can access my portfolio where I introduce myself and showcase all the relevant projects I'm currently working on. Built with JavaScript.
 
 ## Built With
 
@@ -8,8 +8,7 @@
 - Linters: Lighthouse, Webhint, Stylelint & ESlint
 - Formspree
 
-## Live demo
-- [Live Demo Link](https://mikemtzp.github.io/my-portfolio/)
+## Live demo(https://mikemtzp.github.io/My-Portfolio/)
 
 ## Setup
 
@@ -17,7 +16,7 @@ Follow these steps on your console to properly clone this repository on your des
 
 ```
 $ cd desktop
-$ git clone https://github.com/mikemtzp/my-portfolio.git
+$ git clone https://github.com/mikemtzp/My-portfolio.git
 $ cd my-portfolio
 $ open index.html file
 ```
@@ -45,7 +44,7 @@ $ open index.html file
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/mikemtzp/my-portfolio/issues).
+Feel free to check the [issues page](https://github.com/mikemtzp/My-portfolio/issues).
 
 ## Show your support
 
