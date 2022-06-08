@@ -8,7 +8,7 @@
 - Linters: Lighthouse, Webhint, Stylelint & ESlint
 - Formspree
 
-## Live demo(https://mikemtzp.github.io/My-Portfolio/)
+## [Live demo](https://mikemtzp.github.io/My-Portfolio/)
 
 ## Setup
 
