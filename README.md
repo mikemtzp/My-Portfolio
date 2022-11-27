@@ -1,59 +1,34 @@
-# My Portfolio
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-> Here you can access my portfolio where I introduce myself and showcase all the relevant projects I'm currently working on. Built with JavaScript.
+## Getting Started
 
-## Built With
+First, run the development server:
 
-- HTML, CSS & Javascript
-- Linters: Lighthouse, Webhint, Stylelint & ESlint
-- Formspree
-
-## [Live demo](https://mikemtzp.github.io/My-Portfolio/)
-
-## Setup
-
-Follow these steps on your console to properly clone this repository on your desktop:
-
-```
-$ cd desktop
-$ git clone https://github.com/mikemtzp/My-portfolio.git
-$ cd my-portfolio
-$ open index.html file
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-## Authors
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-👤 Mike Martínez
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-- GitHub: [@mikemtzp](https://github.com/mikemtzp)
-- Twitter: [@mikemtzp](https://twitter.com/mikemtzp)
-- LinkedIn: [Miguel Martínez Prieto](https://www.linkedin.com/in/miguel-mart%C3%ADnez-prieto-a42406166/)
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-👤 Mauricio Gallegos
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-- GitHub: [@maury18](https://github.com/maury18)
-- Twitter: [@MauryRodrguez6](https://twitter.com/MauryRodrguez6)
-- LinkedIn: [Mauricio Gallegos Rodríguez](https://www.linkedin.com/in/mauricio-gallegos-rodr%C3%ADguez-380a96183/)
+## Learn More
 
-👤 Dafne Azzolina
+To learn more about Next.js, take a look at the following resources:
 
-- GitHub: [@Daf98](https://github.com/Daf98)
-- Twitter: [@dafne_azzolina](https://twitter.com/dafne_azzolina)
-- LinkedIn: [dafne-azzolina](https://www.linkedin.com/in/dafne-azzolina/)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 🤝 Contributing
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/mikemtzp/My-portfolio/issues).
+## Deploy on Vercel
 
-## Show your support
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- This README.md was elaborated with the [Microverse readme-template](https://github.com/microverseinc/readme-template)
-
-## 📝 License
-
-This project has no license.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
